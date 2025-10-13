@@ -1,0 +1,7 @@
+vlad_av
+/home/vlad_av/linux_lab
+uid=1000(vlad_av) gid=1000(vlad_av) группы=1000(vlad_av),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),105(lpadmin),125(sambashare),986(vboxsf)
+итого 4
+-rw-rw-r-- 2 vlad_av vlad_av 9 окт 13 14:14 main.py
+-rw-rw-r-- 1 vlad_av vlad_av 0 окт 13 13:53 utils.sh
+Пн 13 окт 2025 14:37:17 +03

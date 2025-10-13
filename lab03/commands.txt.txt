@@ -1,0 +1,42 @@
+1)mkdir linux_lab
+2)cd linux_lab
+mkdir -p projects/{scripts,web/{static,templates}} temp backups
+3)tree
+4)touch projects/scripts/{main.py,config.yaml,utils.sh}
+5)touch projects/web/static/{index.html,styles.css}
+6)cat > projects/web/static/index.html
+7)cp projects/web/static/styles.css temp/old_styles.css
+8)mv projects/scripts/config.yaml temp/
+9)cp projects/scripts/*.sh temp/
+10)cd ~
+ls -lRh --sort=size ~/linux_lab
+11)ln linux_lab/projects/scripts/main.py hard_link.txt
+12)cat linux_lab/projects/scripts/main.py
+13)cat >> hard_link.txt
+14)cat linux_lab/projects/scripts/main.py
+15)cd linux_lab/temp
+16)ln -s ../projects/web/static/ web_link
+17)cd web_link
+18)cd ~/linux_lab
+tar -cf backups/projects_backup.tar projects/
+19)tar -czf backups/web_backup.tar.gz projects/web/
+20)zip backups/important_files.zip projects/scripts/main.py projects/scripts/utils.sh
+21)mkdir -p temp/restored_web
+tar -xzf backups/web_backup.tar.gz -C temp/restored_web/
+22)unzip -l backups/important_files.zip
+23)rm -rf temp/*
+24)rm -rf backups/*
+25)rm -f temp/web_link
+26)whoami > report.txt
+pwd >> report.txt
+id >> report.txt
+ls -l projects/scripts/ >> report.txt
+27)date >> report.txt
+28)cp report.txt ~/
+29)cd ~
+zip -P 1111 linux_lab_final.zip -r linux_lab/
+30)ls -lh linux_lab_final.zip
+31)rm -rf linux_lab/
+32)unzip -P 1111 linux_lab_final.zip
+33)cat linux_lab/report.txt
+34)tree linux_lab/
